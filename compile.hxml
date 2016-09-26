@@ -1,0 +1,7 @@
+-cp src
+-main Main
+--each
+-js out/main.js
+--next
+-cpp out/cpp
+-cmd out/cpp/Main
