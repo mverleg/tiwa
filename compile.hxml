@@ -3,7 +3,11 @@
 -main Main
 --each
 -js build/main.js
+#--next
+#-cpp build/cpp
+#-cmd build/cpp/Main
 --next
--cpp build/cpp
--cmd build/cpp/Main
-# neko behaves similar to cpp but compiles much faster, so maybe useful for debugging
+-python build/main.py
+--next
+-x build/main.n
+# neko behaves similar to cpp but compiles much faster, so it's useful for debugging

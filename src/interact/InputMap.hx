@@ -1,4 +1,5 @@
 package interact;
+import misc.Exception;
 import player.Action;
 
 class InputMap
@@ -22,13 +23,14 @@ class InputMap
 		var code:Int = 0;
 		if (key_code != null) {
 			code = key_code;
-			throw Exception('InputEvent must have exactly one of `key_code` or `mouse_code` arguments, not both (mixed keyboard/mouse input is not currently supported).');
+			throw Exce
+			ption('InputEvent must have exactly one of `key_code` or `mouse_code` arguments, not both (mixed keyboard/mouse input is not currently supported).');
 		}
 		else if (mouse_code != null) {
 			code = - mouse_code;
 		}
 		else {
-			throw Exception('InputEvent must have one of `key_code` or `mouse_code` arguments.');
+			throw new Exception('InputEvent must have one of `key_code` or `mouse_code` arguments.');
 		}
 		return 1 * self.shift + 2 * self.alt + 4 * self.bool + 8 * self.code;
 	}

@@ -1,8 +1,10 @@
 
 http://gameprogrammingpatterns.com/contents.html
 
-Make sure all maps iterate in deterministic order , but in a way that players can't predict.
+Make sure all maps iterate in deterministic order, but in a way that players can't predict.
 
 Let code send events and other code (including AI) register to listen for them (there must be a standard solution for this...)
+
+Make sure all units have unique class names, and a create a map for loading them
 
 
