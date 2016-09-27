@@ -1,5 +1,7 @@
 -cp src
 -lib tink_core
+-lib lime
+-lib flixel
 -main Main
 --each
 -js build/main.js

@@ -1,5 +1,6 @@
 package world;
-class WorldGenerator {
-    public function new() {
-    }
+
+interface WorldGenerator
+{
+    public function generate(seed:Int): World;
 }

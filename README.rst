@@ -1,5 +1,5 @@
 
-Tiwa
+TIWA
 ===============================
 
 This project aims to make a real-time strategy game that is means to be played by artificial intelligences rather than humans.

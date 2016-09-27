@@ -1,5 +1,23 @@
 
-http://gameprogrammingpatterns.com/contents.html
+http://www.redblobgames.com/grids/hexagons/implementation.html
+http://gameprogrammingpatterns.com/event-queue.html
+http://gameprogrammingpatterns.com/singleton.html
+http://gameprogrammingpatterns.com/game-loop.html
+http://gameprogrammingpatterns.com/prototype.html
+http://gameprogrammingpatterns.com/state.html
+http://gameprogrammingpatterns.com/double-buffer.html
+http://gameprogrammingpatterns.com/game-loop.html
+http://gameprogrammingpatterns.com/update-method.html
+http://gameprogrammingpatterns.com/bytecode.html
+http://gameprogrammingpatterns.com/subclass-sandbox.html
+http://gameprogrammingpatterns.com/type-object.html
+http://gameprogrammingpatterns.com/component.html
+http://gameprogrammingpatterns.com/service-locator.html
+http://gameprogrammingpatterns.com/data-locality.html
+http://gameprogrammingpatterns.com/dirty-flag.html
+http://gameprogrammingpatterns.com/object-pool.html
+http://gameprogrammingpatterns.com/spatial-partition.html
+
 
 Make sure all maps iterate in deterministic order, but in a way that players can't predict.
 
