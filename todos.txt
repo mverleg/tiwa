@@ -1,0 +1,4 @@
+
+Make sure all maps iterate in deterministic order , but in a way that players can't predict.
+
+

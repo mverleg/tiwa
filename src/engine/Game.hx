@@ -1,5 +1,9 @@
 package engine;
-class Game {
-	public function new() {
+
+class Game
+{
+	public function new()
+	{
+
 	}
 }

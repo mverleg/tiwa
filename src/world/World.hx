@@ -5,5 +5,7 @@ interface World {
     public var height:Int;
     public var generator:WorldGenerator;
 
+    // todo: 2D array: http://stackoverflow.com/questions/16317567/how-to-declare-2d-arrays-in-haxe
+
     public function generate():Void;
 }
