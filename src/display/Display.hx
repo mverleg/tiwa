@@ -1,4 +1,4 @@
-package view;
+package display;
 interface Display
 {
     //todo: how to do this? make a representation of each unit and object with display information? (since there are different display modes)

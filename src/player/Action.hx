@@ -28,7 +28,7 @@ class Action
     public function get_representation(selection:List<Unit>, target:Unit):ActionRepr
     {
         /*
-        Store this action so it can be used for replays and for sending to the view.
+        Store this action so it can be used for replays and for sending to the display.
          */
         return {
             type: this.cls_name,

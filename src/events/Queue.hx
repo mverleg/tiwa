@@ -4,6 +4,12 @@ import objects.Unit;
 
 class Queue
 {
+	/*
+	This is a queue, where things are added at one end and consumed at the other. But it uses callbacks
+	to all listeners upon consuming, so it's not really a temporal decoupling mechanism.
+	//todo perhaps I should convert this to a router, which delivers messages immediately but to a listener's own queue (actor model pattern)
+	//todo I'd be good in the above or the current case to filter by sources (which'd be easy, just pass a filter function when registering, like `type`)
+	 */
 	public static var instance:Queue = new Queue();
 	private var listeners:Map<String, List<Callback>> = new Map();
 	private var queue:Map<String, List<Signal>> = new Map();

@@ -1,6 +1,5 @@
 
 http://www.redblobgames.com/grids/hexagons/implementation.html
-http://gameprogrammingpatterns.com/event-queue.html
 http://gameprogrammingpatterns.com/singleton.html
 http://gameprogrammingpatterns.com/game-loop.html
 http://gameprogrammingpatterns.com/prototype.html
@@ -24,5 +23,16 @@ Make sure all maps iterate in deterministic order, but in a way that players can
 Let code send events and other code (including AI) register to listen for them (there must be a standard solution for this...)
 
 Make sure all units have unique class names, and a create a map for loading them
+
+Display stuff should probably live in a separate thread of process (sound is also considered a Display).
+Players are another good candidate for living in their own process. Although the communication in that case is more two-way.
+I'm reading that not a lot of games do that, because AI and rendering share too much data with the main engine.
+An alternative is to use a work queue, but it's doubtful how many demanding, isolatable tasks the game has.
+So probably don't do this for now. Just make everything decoupled, then it can be added later.
+
+How does haxe cpp deal with memory? Is the signal queue going to be a huge memory leak?
+
+Actions handle input to the program. These can be used to store a game, since replaying it will recreate everything.
+Signals handle things that happened and their reactions. It'd be more straightforward to use this or the state for display instead of actions, since otherwise each display needs to resimulate the game.
 
 

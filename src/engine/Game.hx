@@ -1,6 +1,6 @@
 package engine;
 import player.Player;
-import view.Display;
+import display.Display;
 import world.World;
 
 class Game
