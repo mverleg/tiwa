@@ -35,4 +35,8 @@ How does haxe cpp deal with memory? Is the signal queue going to be a huge memor
 Actions handle input to the program. These can be used to store a game, since replaying it will recreate everything.
 Signals handle things that happened and their reactions. It'd be more straightforward to use this or the state for display instead of actions, since otherwise each display needs to resimulate the game.
 
+MIT has a yearly RTS AI competition https://www.battlecode.org/
+
+RTS game could have you build a partial base beforehand without build times, to cut down on the routine work
+
 
